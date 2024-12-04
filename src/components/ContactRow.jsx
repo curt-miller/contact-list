@@ -1,12 +1,17 @@
 import React, { useState } from "react";
+import SelectedContact from "./SelectedContact";
 
 
-function ContactRow({contact}) {
+function ContactRow({setSelectedContactId, cont}) {
     return(
-        <tr>
-            <td>{contact.name}</td>
-            <td>{contact.email}</td>
-            <td>{contact.phone}</td>
+        <tr
+            onClick={() => {
+                setSelectedContactId(cont.id);
+            }}
+            >
+            <td>{cont.name}</td>
+            <td>{cont.email}</td>
+            <td>{cont.phone}</td>
         </tr>
     )
 }
