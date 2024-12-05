@@ -1,1 +1,1 @@
-This is a contact list app made by Curt Miller
+This is a contact list app made by Curt Miller!
